@@ -19,6 +19,8 @@
   "dependencies": {
     "@nestjs/common": "^5.0.0",
     "@nestjs/core": "^5.0.0",
+    "class-transformer": "^0.1.9",
+    "class-validator": "^0.8.5",
     "fastify-formbody": "^2.0.0",
     "reflect-metadata": "^0.1.12",
     "rxjs": "^6.0.0",
