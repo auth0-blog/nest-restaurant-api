@@ -5,7 +5,6 @@ import {
   Controller,
   UsePipes,
   UseGuards,
-  ReflectMetadata,
 } from '@nestjs/common';
 import { CreateItemDto } from './create-item.dto';
 import { ItemsService } from './items.service';
@@ -15,8 +14,7 @@ import { AdminGuard } from '../common/admin.guard';
 
 @Controller('items')
 export class ItemsController {
-  constructor(private readonly itemsService: ItemsService) {
-  }
+  constructor(private readonly itemsService: ItemsService) {}
 
   @Get()
   async findAll(): Promise<Item[]> {
